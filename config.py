@@ -6,7 +6,7 @@ class Config:
   
 
 
-    SECRET_KEY = os.environ["SECRET_KEY"]
+    SECRET_KEY ='123456'
     # UPLOADED_PHOTOS_DEST ='app/static/photos
     
     
@@ -14,8 +14,8 @@ class Config:
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = os.environ("MAIL_USERNAME")
-    MAIL_PASSWORD = os.environ("MAIL_PASSWORD")
+    # MAIL_USERNAME = os.environ("MAIL_USERNAME")
+    # MAIL_PASSWORD = os.environ("MAIL_PASSWORD")
 
 class ProdConfig(Config):
     '''
@@ -26,7 +26,7 @@ class ProdConfig(Config):
     '''
    
 
-    SQLALCHEMY_DATABASE_URI = os.environ("DATABASE_URL")
+    # SQLALCHEMY_DATABASE_URI = os.environ("DATABASE_URL")
     # if SQLALCHEMY_DATABASE_URI.startswith("postgres://"):
             
     #     SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI.replace("postgres://", "postgresql://",1)

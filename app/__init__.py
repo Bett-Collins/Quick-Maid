@@ -6,6 +6,10 @@ from flask_login import LoginManager
 from flask_uploads import UploadSet,configure_uploads,IMAGES
 from flask_mail import Mail
 import os
+from flask_wtf import Form
+from wtforms import TextField, BooleanField,IntegerField
+from wtforms.validators import Required
+
 
 login_manager = LoginManager()
 login_manager.session_protection = 'strong'
